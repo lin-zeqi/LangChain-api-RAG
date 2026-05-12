@@ -1,0 +1,4 @@
+标题：Python 异步编程与 FastAPI 框架实践
+Python 的 asyncio 库为编写并发代码提供了基础架构。在现代 Web 开发中，FastAPI 因其高性能和对异步的原生支持而广受欢迎。
+当我们定义一个路径操作函数时，使用 async def 声明至关重要。这意味着该函数将在事件循环中运行，而不是在线程池中阻塞。例如，在处理高并发的 I/O 密集型任务（如查询 PostgreSQL 数据库）时，异步非阻塞模式能显著提升吞吐量。
+然而，如果在 async 函数中调用了同步的耗时操作（如 time.sleep 或传统的 requests 库），将会阻塞整个事件循环，导致服务假死。正确的做法是使用 await asyncio.sleep() 或异步 HTTP 客户端（如 httpx）。

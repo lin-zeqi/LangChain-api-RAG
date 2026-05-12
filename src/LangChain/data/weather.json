@@ -1,0 +1,17 @@
+[
+  {
+    "city": "北京",
+    "weather": "晴",
+    "temperature": 22
+  },
+  {
+    "city": "上海",
+    "weather": "小雨",
+    "temperature": 18
+  },
+  {
+    "city": "广州",
+    "weather": "多云",
+    "temperature": 26
+  }
+]

@@ -1,0 +1,6 @@
+标题：NVIDIA H100 GPU 技术规格与配置指南
+NVIDIA H100 Tensor Core GPU 是基于 Hopper 架构的高性能计算加速器。在进行深度学习训练集群搭建时，需注意以下硬件参数：
+显存带宽：H100 SXM 版本拥有 3.35 TB/s 的显存带宽。
+互联技术：支持第四代 NVLink，提供 900 GB/s 的双向带宽。
+精度支持：针对 Transformer 引擎进行了优化，支持 FP8 和 FP16 精度加速。
+在安装驱动时，请确保 CUDA Toolkit 版本不低于 11.8。若遇到 Error Code: 0x00000042，通常意味着 PCIe 通道配置错误或供电不足。建议检查主板 BIOS 中的 "Above 4G Decoding" 选项是否已开启。

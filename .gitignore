@@ -1,0 +1,48 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.py[cod]
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# LangChain 缓存与密钥
+.cache/
+*.key
+
+# Database and cache files
+*.sqlite3
+*.db
+chroma.sqlite3
+
+# ChromaDB vector database
+c9d30e21-e03f-4a88-a2fb-6cbf97f1c44a/
+
+# Chat history
+chat_history/
+
+# Item directory
+src/item/
+
+
+# 系统与日志
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
