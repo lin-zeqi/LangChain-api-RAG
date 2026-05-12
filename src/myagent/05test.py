@@ -2,7 +2,7 @@ from openai import OpenAI
 from pyexpat.errors import messages
 
 client = OpenAI(
-    api_key="sk-a692e848f05746d48bef2d57789a1de1",
+    api_key="sk-*************",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
     # base_url = "http://localhost:1143/v1"
 )
